@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="font-size: 40px;color: crimson;">GR Network</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" ><a class="nav-link" href="#" style="color: black;">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"  style="color: black;">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"  style="color: black;">All Jobs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"  style="color: black;">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"  style="color: black;">Account</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Post Jobs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pop-up Modal -->
+    <div class="modal fade" id="jobSearchModal" tabindex="-1" aria-labelledby="jobSearchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jobSearchModalLabel" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Find Your Next Job</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="jobTitle" style="color: cadetblue;">Job Title</label>
+                            <input type="text" class="form-control" id="jobTitle" placeholder="Keyword, category or company">
+                        </div>
+                        <div class="form-group">
+                            <label for="location" style="color: cadetblue;">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="City, state or country">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container my-5">
+        
+        <div class="text-center mb-4">
+            <h2 style="color: chocolate;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Job Categories</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <h5 class="card-title"><i class="fas fa-code"></i> Developer</h5>
+                            <p class="card-text">2000 jobs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-paint-brush"></i> Designer</h5>
+                            <p class="card-text">1000 jobs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bullhorn"></i> Marketing</h5>
+                            <p class="card-text">3000 jobs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-database"></i> Database</h5>
+                            <p class="card-text">500 jobs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-concierge-bell"></i> Service</h5>
+                            <p class="card-text">200 jobs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-cogs"></i> Engineer</h5>
+                            <p class="card-text">5000 jobs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-vial"></i> Testing</h5>
+                            <p class="card-text">2000 jobs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-chart-line"></i> Analyst</h5>
+                            <p class="card-text">2500 jobs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="text-center mb-4">
+            <h2 style="color: darkgoldenrod;font-family: Verdana, Geneva, Tahoma, sans-serif;">Latest Jobs</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior Web Developer</h5>
+                            <p class="card-text">GR Network., Chennai, India</p>
+                            <p class="card-text"><small class="text-muted">₹ 1L- 2.5L, Full-time, Day shift</small></p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior SQL Developer</h5>
+                            <p class="card-text">GR Network., Chennai, India</p>
+                            <p class="card-text"><small class="text-muted">₹ 80k - 1.5L, Full-time, Day shift</small></p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior Associate Developer</h5>
+                            <p class="card-text">GR Network., Chennai, India</p>
+                            <p class="card-text"><small class="text-muted">₹ 1.2L - 2.5L, Full-time, Day shift</small></p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior Web Developer</h5>
+                            <p class="card-text">GR Network., Chennai, India</p>
+                            <p class="card-text"><small class="text-muted">₹ 60k - 90k, Full-time, Day shift</small></p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior Associate Developer</h5>
+                            <p class="card-text">GR Network., Chennai, India</p>
+                            <p class="card-text"><small class="text-muted">₹ 70k - 1L, Full-time, Day shift</small></p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior
+                                <br> Tester</h5>
+                            <p class="card-text">GR Network., Chennai, India</p>
+                            <p class="card-text"><small class="text-muted">₹ 50k - 75k, Full-time, Day shift</small></p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-light text-center text-lg-start">
+            
+            <div class="text-center p-3 bg-dark text-white">
+                &copy; 2023 by GR Network. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Show modal after 5 seconds
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('#jobSearchModal').modal('show');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
